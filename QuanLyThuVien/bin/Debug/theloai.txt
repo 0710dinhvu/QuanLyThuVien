@@ -1,0 +1,20 @@
+TL001,Văn học
+TL002,Khoa học
+TL003,Lịch sử
+TL004,Công nghệ
+TL005,Nghệ thuật
+TL006,Kinh tế
+TL007,Tâm lý học
+TL008,Y học
+TL009,Thể thao
+TL010,Du lịch
+TL011,Triết học
+TL012,Chính trị
+TL013,Thiếu nhi
+TL014,Kỹ năng sống
+TL015,Ngôn ngữ học
+TL016,Viễn tưởng
+TL017,Truyện tranh
+TL018,Nông nghiệp
+TL019,Kỹ thuật
+TL020,Môi trường

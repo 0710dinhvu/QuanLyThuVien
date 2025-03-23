@@ -1,0 +1,14 @@
+D:\BTL\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmLogin.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+D:\BTL\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\BTL\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmMain.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmTraCuuSach.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.Test.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmThueSach.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmTraSach.resources

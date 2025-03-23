@@ -1,0 +1,30 @@
+S001,Đắc Nhân Tâm,Dale Carnegie,1936,TL001,10,4
+S002,Sapiens: Lược sử loài người,Yuval Noah Harari,2011,TL002,8,2
+S003,Đại Việt Sử Ký Toàn Thư,Ngô Sĩ Liên,1697,TL003,5,1
+S004,Lập trình C# cơ bản,John Sharp,2020,TL004,7,5
+S005,Nghệ thuật và Cuộc sống,Nguyễn Văn A,2018,TL005,6,3
+S006,Tư duy nhanh và chậm,Daniel Kahneman,2011,TL007,9,6
+S007,Giáo trình Kinh tế vi mô,Paul Samuelson,2015,TL006,12,7
+S008,Atlas Giải phẫu người,Frank H. Netter,2014,TL008,10,4
+S009,100 bài tập thể hình,Mark Lauren,2016,TL009,8,5
+S010,Cẩm nang du lịch Việt Nam,Nguyễn Văn B,2019,TL010,6,3
+S011,Thế giới phẳng,Thomas Friedman,2005,TL006,7,2
+S012,Homo Deus: Lược sử tương lai,Yuval Noah Harari,2015,TL002,8,3
+S013,Lịch sử thế giới,William H. McNeill,2009,TL003,6,1
+S014,Python cho người mới bắt đầu,Eric Matthes,2019,TL004,9,5
+S015,Chiến lược kinh doanh,Michael Porter,1998,TL006,10,4
+S016,Triết học phương Tây,Bertrand Russell,1945,TL011,7,3
+S017,Chính trị học cơ bản,Andrew Heywood,2012,TL012,9,6
+S018,Câu chuyện chú bé Nobi,Noboru Baba,1990,TL013,12,8
+S019,7 thói quen của người thành đạt,Stephen Covey,1989,TL014,10,4
+S020,Ngữ pháp tiếng Anh cơ bản,Raymond Murphy,2002,TL015,8,2
+S021,Dune: Hành tinh cát,Frank Herbert,1965,TL016,10,6
+S022,One Piece tập 1,Eiichiro Oda,1997,TL017,20,12
+S023,Kỹ thuật chăn nuôi gia súc,Nguyễn Văn C,2010,TL018,5,2
+S024,Cơ khí động lực học,James Hutton,2011,TL019,7,3
+S025,Biến đổi khí hậu và con người,David Attenborough,2020,TL020,6,2
+S026,Kinh tế học vĩ mô,Paul Krugman,2014,TL006,8,4
+S027,Cấu trúc dữ liệu và thuật toán,Robert Lafore,2006,TL004,7,3
+S028,Hồi ký Winston Churchill,Winston Churchill,1959,TL003,5,2
+S029,Bí quyết thành công,Jack Canfield,2005,TL014,10,7
+S030,Cuộc cách mạng công nghiệp 4.0,Klaus Schwab,2017,TL002,9,5
