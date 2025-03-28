@@ -1,30 +1,200 @@
-S001,Đắc Nhân Tâm,Dale Carnegie,1936,TL001,10,4
-S002,Sapiens: Lược sử loài người,Yuval Noah Harari,2011,TL002,8,2
-S003,Đại Việt Sử Ký Toàn Thư,Ngô Sĩ Liên,1697,TL003,5,1
-S004,Lập trình C# cơ bản,John Sharp,2020,TL004,7,5
-S005,Nghệ thuật và Cuộc sống,Nguyễn Văn A,2018,TL005,6,3
-S006,Tư duy nhanh và chậm,Daniel Kahneman,2011,TL007,9,6
-S007,Giáo trình Kinh tế vi mô,Paul Samuelson,2015,TL006,12,7
-S008,Atlas Giải phẫu người,Frank H. Netter,2014,TL008,10,4
-S009,100 bài tập thể hình,Mark Lauren,2016,TL009,8,5
-S010,Cẩm nang du lịch Việt Nam,Nguyễn Văn B,2019,TL010,6,3
-S011,Thế giới phẳng,Thomas Friedman,2005,TL006,7,2
-S012,Homo Deus: Lược sử tương lai,Yuval Noah Harari,2015,TL002,8,3
-S013,Lịch sử thế giới,William H. McNeill,2009,TL003,6,1
-S014,Python cho người mới bắt đầu,Eric Matthes,2019,TL004,9,5
-S015,Chiến lược kinh doanh,Michael Porter,1998,TL006,10,4
-S016,Triết học phương Tây,Bertrand Russell,1945,TL011,7,3
-S017,Chính trị học cơ bản,Andrew Heywood,2012,TL012,9,6
-S018,Câu chuyện chú bé Nobi,Noboru Baba,1990,TL013,12,8
-S019,7 thói quen của người thành đạt,Stephen Covey,1989,TL014,10,4
-S020,Ngữ pháp tiếng Anh cơ bản,Raymond Murphy,2002,TL015,8,2
-S021,Dune: Hành tinh cát,Frank Herbert,1965,TL016,10,6
-S022,One Piece tập 1,Eiichiro Oda,1997,TL017,20,12
-S023,Kỹ thuật chăn nuôi gia súc,Nguyễn Văn C,2010,TL018,5,2
-S024,Cơ khí động lực học,James Hutton,2011,TL019,7,3
-S025,Biến đổi khí hậu và con người,David Attenborough,2020,TL020,6,2
-S026,Kinh tế học vĩ mô,Paul Krugman,2014,TL006,8,4
-S027,Cấu trúc dữ liệu và thuật toán,Robert Lafore,2006,TL004,7,3
-S028,Hồi ký Winston Churchill,Winston Churchill,1959,TL003,5,2
-S029,Bí quyết thành công,Jack Canfield,2005,TL014,10,7
-S030,Cuộc cách mạng công nghiệp 4.0,Klaus Schwab,2017,TL002,9,5
+S001,Đạo của Warren Buffett,Mary Buffett,2010,TL011,8,3
+S002,Phía sau nghi can X,Higashino Keigo,2005,TL004,12,5
+S003,Thiên Mệnh,Higashino Keigo,2010,TL004,10,4
+S004,Ác Ý,Higashino Keigo,1996,TL003,6,2
+S005,Phật giáo vấn đáp,Tử Kim Trần,2015,TL013,15,7
+S006,Đời ngắn đừng ngủ dài,Tử Kim Trần,2017,TL011,20,9
+S007,Bạch Dạ Hành,Higashino Keigo,1999,TL004,10,3
+S008,Nhà giả kim,Paulo Coelho,1988,TL005,15,6
+S009,Đắc nhân tâm,Dale Carnegie,1936,TL011,18,8
+S010,Harry Potter và Hòn đá Phù thủy,J.K. Rowling,1997,TL009,12,5
+S011,Ông già và Biển cả,Ernest Hemingway,1952,TL001,7,2
+S012,7 Thói quen của người thành đạt,Stephen R. Covey,1989,TL011,10,4
+S013,Đi tìm lẽ sống,Viktor E. Frankl,1946,TL008,9,3
+S014,Trí tuệ Do Thái,Erich Fromm,1975,TL011,8,3
+S015,Nghìn lẻ một đêm,Unknown,1706,TL001,5,1
+S016,Tôi là Bêtô,Nguyễn Nhật Ánh,2007,TL009,10,4
+S017,Người trong bóng tối,Higashino Keigo,2009,TL004,8,2
+S018,Đại gia Gatsby,F. Scott Fitzgerald,1925,TL001,9,3
+S019,Chiến tranh và hòa bình,Leo Tolstoy,1869,TL010,6,1
+S020,Sherlock Holmes,A. Conan Doyle,1887,TL004,12,5
+S021,Trò chơi vương quyền,George R.R. Martin,1996,TL002,10,3
+S022,Những người khốn khổ,Victor Hugo,1862,TL001,7,2
+S023,Thép đã tôi thế đấy,Nikolai Ostrovsky,1932,TL001,5,1
+S024,Tâm lý học đám đông,Gustave Le Bon,1895,TL008,6,2
+S025,Chạng vạng,Stephenie Meyer,2005,TL005,10,4
+S026,Đồi gió hú,Emily Brontë,1847,TL005,8,3
+S027,Hoàng tử bé,Antoine de Saint-Exupéry,1943,TL009,15,7
+S028,Thiên nga đen,Nassim Nicholas Taleb,2007,TL014,5,1
+S029,Quẳng gánh lo đi mà vui sống,Dale Carnegie,1948,TL011,12,5
+S030,Nhật ký Anne Frank,Anne Frank,1947,TL010,7,2
+S031,Chúa tể những chiếc nhẫn,J.R.R. Tolkien,1954,TL002,9,3
+S032,Cuốn theo chiều gió,Margaret Mitchell,1936,TL005,8,3
+S033,Đọc vị bất kỳ ai,David J. Lieberman,2007,TL008,6,2
+S034,Đêm trắng,Fyodor Dostoevsky,1848,TL001,5,1
+S035,Trại súc vật,George Orwell,1945,TL012,7,2
+S036,1984,George Orwell,1949,TL012,8,3
+S037,Suối nguồn,Ayn Rand,1943,TL001,6,1
+S038,Đời thay đổi khi chúng ta thay đổi,Andrew Matthews,1990,TL011,7,3
+S039,Những kẻ thiên tài,John Green,2017,TL005,9,4
+S040,Tôi nói gì khi nói về chạy,Haruki Murakami,2007,TL008,5,1
+S041,Người thầy đầu tiên,Chingiz Aitmatov,1962,TL007,6,2
+S042,Thiền và nghệ thuật,Robert M. Pirsig,1974,TL008,5,1
+S043,Điều kỳ diệu của tiệm tạp hóa Namiya,Higashino Keigo,2012,TL006,10,4
+S044,Những người chết không bao giờ kể,Agatha Christie,1939,TL004,7,2
+S045,Chuyện con mèo dạy hải âu bay,Luis Sepúlveda,1996,TL009,12,6
+S046,Quốc gia khởi nghiệp,Dan Senor & Saul Singer,2009,TL012,8,3
+S047,Tư duy nhanh và chậm,Daniel Kahneman,2011,TL008,7,2
+S048,Những bí mật của may mắn,Alex Rovira,2004,TL011,6,2
+S049,Tâm lý học tiền bạc,Morgan Housel,2020,TL011,9,4
+S050,Chết ở Venice,Thomas Mann,1912,TL001,5,1
+S051,Biên niên ký chim vặn dây cót,Haruki Murakami,1994,TL001,8,3
+S052,Những đứa trẻ đêm hôm,Higashino Keigo,2016,TL003,7,2
+S053,Tâm an vạn sự an,Tử Kim Trần,2018,TL013,12,5
+S054,Đồi thỏ,Richard Adams,1972,TL009,6,1
+S055,Pháo đài số,Dan Brown,2003,TL002,10,4
+S056,Người truyền ký ức,Lois Lowry,1993,TL002,8,3
+S057,Thiên thần và ác quỷ,Dan Brown,2000,TL002,9,3
+S058,Kafka bên bờ biển,Haruki Murakami,2002,TL001,7,2
+S059,Giết con chim nhại,Harper Lee,1960,TL001,10,4
+S060,Đảo giấu vàng,Robert L. Stevenson,1883,TL009,5,1
+S061,Mật mã Da Vinci,Dan Brown,2003,TL002,12,5
+S062,Trái tim mùa thu,Tử Kim Trần,2019,TL008,9,3
+S063,Người tình,Marguerite Duras,1984,TL005,6,1
+S064,Điều kỳ diệu của hiện tại,Thích Nhất Hạnh,2015,TL013,15,7
+S065,Nỗi buồn chiến tranh,Bảo Ninh,1991,TL010,5,1
+S066,Những vụ án của Sherlock Holmes,A. Conan Doyle,1892,TL004,10,4
+S067,Tôi là một con lừa,Nguyễn Nhật Ánh,2013,TL009,8,3
+S068,Chuyến tàu 1/5 giờ sáng,Higashino Keigo,2017,TL004,7,2
+S069,Những người hàng xóm,Higashino Keigo,2009,TL001,6,1
+S070,Đường xưa mây trắng,Thích Nhất Hạnh,1999,TL013,12,5
+S071,Chạng vạng: Trăng non,Stephenie Meyer,2006,TL005,9,3
+S072,Những kẻ xuất chúng,Malcolm Gladwell,2008,TL011,7,2
+S073,Đại dương đen,Hạ Đình,2016,TL003,5,1
+S074,Chúa nhẫn: Hai tòa tháp,J.R.R. Tolkien,1954,TL002,8,3
+S075,Trở về từ cõi sáng,Nguyên Phong,2017,TL008,10,4
+S076,Người yêu dấu,Toni Morrison,1987,TL001,6,1
+S077,Đối thoại với Thượng đế,Neale D. Walsch,1995,TL013,7,2
+S078,Lâu đài bay của pháp sư Howl,Diana W. Jones,1986,TL009,5,1
+S079,Biển lặng,Patrick Ness,2013,TL002,6,1
+S080,Những bông hoa nở muộn,Tử Kim Trần,2020,TL008,8,3
+S081,Thiên thần sa ngã,William Hjortsberg,1978,TL003,5,1
+S082,Tiếng chim hót trong bụi mận gai,Colleen McCullough,1977,TL005,9,3
+S083,Những ngày thơ ấu,Nguyên Hồng,1938,TL001,7,2
+S084,Phòng trọ số 10,Higashino Keigo,2011,TL004,6,1
+S085,Đường mây trên đất hoa,Nguyên Phong,2018,TL013,10,4
+S086,Chạng vạng: Nhật thực,Stephenie Meyer,2007,TL005,8,3
+S087,Nghệ thuật tối giản,Marie Kondo,2011,TL011,12,6
+S088,Chúa nhẫn: Nhà vua trở về,J.R.R. Tolkien,1955,TL002,9,3
+S089,Cuộc đời của Pi,Yann Martel,2001,TL001,7,2
+S090,Những câu hỏi lớn,Stephen Hawking,2011,TL014,6,1
+S091,Chạng vạng: Hừng đông,Stephenie Meyer,2008,TL005,10,4
+S092,Nghệ thuật yêu,Erich Fromm,1956,TL008,8,3
+S093,Đêm dài một đời,Mạc Ngôn,2012,TL001,5,1
+S094,Phòng chờ thiên đường,Higashino Keigo,2015,TL004,7,2
+S095,Tâm lý học hạnh phúc,Daniel Gilbert,2006,TL008,9,3
+S096,Chúa tể đom đóm,Kazuo Ishiguro,2005,TL002,6,1
+S097,Những kẻ mộng mơ,John Green,2012,TL005,8,3
+S098,Thiền sư và em bé 5 tuổi,Thích Nhất Hạnh,2004,TL013,12,5
+S099,Người đua diều,Khaled Hosseini,2003,TL001,10,4
+S100,Thiên đường đánh mất,John Milton,1667,TL001,5,1
+S101,Thép đã tôi thế đấy,Nikolai Ostrovsky,1932,TL001,7,3
+S102,Nghìn mặt trời rực rỡ,Khaled Hosseini,2007,TL001,9,4
+S103,Đồi thỏ,Richard Adams,1972,TL009,6,2
+S104,Người xa lạ,Albert Camus,1942,TL001,5,1
+S105,Chúa ruồi,William Golding,1954,TL001,8,3
+S106,Bố già,Mario Puzo,1969,TL001,10,5
+S107,Trăm năm cô đơn,Gabriel Garcia Marquez,1967,TL001,7,3
+S108,Chuyện ở nông trại,George Orwell,1945,TL012,6,2
+S109,Những người khốn khổ,Victor Hugo,1862,TL001,8,3
+S110,Anna Karenina,Leo Tolstoy,1877,TL001,9,4
+S111,Lolita,Vladimir Nabokov,1955,TL001,5,1
+S112,Tiếng gọi nơi hoang dã,Jack London,1903,TL001,7,3
+S113,Giết con chim nhại,Harper Lee,1960,TL001,10,5
+S114,Nhật ký Anne Frank,Anne Frank,1947,TL010,6,2
+S115,Đồi gió hú,Emily Brontë,1847,TL005,8,3
+S116,Cuốn theo chiều gió,Margaret Mitchell,1936,TL005,9,4
+S117,Chuyến phiêu lưu của Tom Sawyer,Mark Twain,1876,TL009,7,3
+S118,Alice ở xứ sở thần tiên,Lewis Carroll,1865,TL009,6,2
+S119,Peter Pan,J.M. Barrie,1911,TL009,5,1
+S120,Charlie và nhà máy sôcôla,Roald Dahl,1964,TL009,8,3
+S121,Biên niên ký Narnia,C.S. Lewis,1950,TL009,9,4
+S122,Hoàng tử bé,Antoine de Saint-Exupéry,1943,TL009,10,5
+S123,Harry Potter và Phòng chứa Bí mật,J.K. Rowling,1998,TL009,12,6
+S124,Những cuộc phiêu lưu,Mark Twain,1884,TL009,7,3
+S125,Con chim xanh,Maurice Maeterlinck,1908,TL009,6,2
+S126,Tâm lý học đám đông,Gustave Le Bon,1895,TL008,5,1
+S127,Đọc vị bất kỳ ai,David J. Lieberman,2007,TL008,7,3
+S128,Tư duy nhanh và chậm,Daniel Kahneman,2011,TL008,8,3
+S129,Nghệ thuật yêu,Erich Fromm,1956,TL008,6,2
+S130,Tâm lý học hạnh phúc,Daniel Gilbert,2006,TL008,7,3
+S131,Những kẻ xuất chúng,Malcolm Gladwell,2008,TL011,9,4
+S132,Quốc gia khởi nghiệp,Dan Senor & Saul Singer,2009,TL012,8,3
+S133,Đại dương đen,Hạ Đình,2016,TL003,6,2
+S134,Thiên thần và ác quỷ,Dan Brown,2000,TL002,10,5
+S135,Mật mã Da Vinci,Dan Brown,2003,TL002,12,6
+S136,Moby Dick,Herman Melville,1851,TL001,7,3
+S137,Chúa tể những chiếc nhẫn,J.R.R. Tolkien,1954,TL002,9,4
+S138,Những đứa con của nửa đêm,Salman Rushdie,1981,TL001,6,2
+S139,Những tấm lòng cao cả,Edmondo De Amicis,1886,TL007,5,1
+S140,Thép đã tôi thế đấy,Nikolai Ostrovsky,1932,TL001,7,3
+S141,Những người hàng xóm,Hạ Đình,2015,TL003,6,2
+S142,Kinh tế học hài hước,Steven D. Levitt,2005,TL014,8,3
+S143,Vũ trụ trong vỏ hạt dẻ,Stephen Hawking,2001,TL014,7,3
+S144,Lược sử thời gian,Stephen Hawking,1988,TL014,6,2
+S145,Những bí ẩn của vũ trụ,Neil deGrasse Tyson,2017,TL014,9,4
+S146,Đạo của vật lý,Fritjof Capra,1975,TL014,5,1
+S147,Súng, vi trùng và thép,Jared Diamond,1997,TL014,8,3
+S148,Thiên đường đánh mất,John Milton,1667,TL001,6,2
+S149,Những người chết không bao giờ kể,Agatha Christie,1939,TL004,7,3
+S150,Án mạng trên sông Nile,Agatha Christie,1937,TL004,8,3
+S151,Những người khốn khổ,Victor Hugo,1862,TL001,8,3
+S152,Chiến tranh và hòa bình,Leo Tolstoy,1869,TL001,7,2
+S153,Bà Bovary,Gustave Flaubert,1856,TL001,6,2
+S154,Don Quixote,Miguel de Cervantes,1605,TL001,5,1
+S155,Faust,Johann Wolfgang von Goethe,1808,TL001,6,2
+S156,Vũ trụ trong vỏ hạt dẻ,Stephen Hawking,2001,TL014,7,3
+S157,Gen: Lịch sử tương lai,Siddhartha Mukherjee,2016,TL014,6,2
+S158,Thế giới phẳng,Thomas Friedman,2005,TL014,8,3
+S159,Bản thiết kế vĩ đại,Stephen Hawking,2010,TL014,5,1
+S160,Súng, vi trùng và thép,Jared Diamond,1997,TL014,9,4
+S161,Nghệ thuật tinh tế,Mark Manson,2016,TL011,9,4
+S162,Atomic Habits,James Clear,2018,TL011,12,5
+S163,Nghĩ ngược lại và làm khác đi,Paul Arden,2006,TL011,7,2
+S164,Deep Work,Cal Newport,2016,TL011,8,3
+S165,Sức mạnh của thói quen,Charles Duhigg,2012,TL011,10,5
+S166,Án mạng ABC,Agatha Christie,1936,TL004,6,2
+S167,Phòng đốt xác,Jeffery Deaver,1997,TL004,7,3
+S168,Cô gái có hình xăm rồng,Stieg Larsson,2005,TL004,8,3
+S169,Con nhện mù,John Verdon,2010,TL004,5,1
+S170,Biệt thự đỏ,Gilles Milo-Vacéri,2004,TL004,6,2
+S171,Sự va chạm giữa các nền văn minh,Samuel Huntington,1996,TL012,5,1
+S172,Lịch sử thế giới,E.H. Gombrich,1935,TL010,7,3
+S173,21 bài học cho thế kỷ 21,Yuval Noah Harari,2018,TL012,9,4
+S174,Thế giới cho đến ngày hôm qua,Jared Diamond,2012,TL010,6,2
+S175,Nguồn gốc các loài,Charles Darwin,1859,TL014,8,3
+S176,Thiên nga đen,Nassim Nicholas Taleb,2007,TL011,7,3
+S177,Hiểu về trái tim,Minh Niệm,2011,TL008,10,5
+S178,Đời thay đổi khi chúng ta thay đổi,Andrew Matthews,1990,TL011,8,3
+S179,Nhà lãnh đạo không chức danh,Robin Sharma,2010,TL011,9,4
+S180,Tứ thư lãnh đạo,Hoàng Xuân Việt,2008,TL011,6,2
+S181,Nghệ thuật chiến tranh,Tôn Tử,-500,TL011,12,6
+S182,Quốc gia khởi nghiệp,Dan Senor,2009,TL012,7,3
+S183,Tâm lý học đám đông,Gustave Le Bon,1895,TL008,5,1
+S184,Phương pháp giáo dục Montessori,Maria Montessori,1909,TL007,8,3
+S185,Cha giàu cha nghèo,Robert Kiyosaki,1997,TL011,15,7
+S186,Đánh thức con người phi thường,Anthony Robbins,1991,TL011,9,4
+S187,Những bức thư gửi người bạn trẻ,Paulo Coelho,2014,TL011,6,2
+S188,Đọc vị bất kỳ ai,David J. Lieberman,2007,TL008,7,3
+S189,Tư duy tích cực,Norman Vincent Peale,1952,TL011,8,3
+S190,7 chiến lược thịnh vượng,Jim Rohn,1993,TL011,5,1
+S191,Nghệ thuật giao tiếp để thành công,Leil Lowndes,1999,TL011,9,4
+S192,Những kẻ xuất chúng,Malcolm Gladwell,2008,TL011,10,5
+S193,Outliers: Lịch sử thành công,Malcolm Gladwell,2011,TL011,7,3
+S194,Điểm bùng phát,Malcolm Gladwell,2000,TL011,6,2
+S195,Trong chớp mắt,Malcolm Gladwell,2005,TL011,8,3
+S196,David và Goliath,Malcolm Gladwell,2013,TL011,5,1
+S197,Những gã trai kỳ dị và cô gái kỳ quặc,John Green,2017,TL005,9,4
+S198,Kẻ trộm sách,Markus Zusak,2005,TL001,11,6
+S199,Chạng vạng,Stephenie Meyer,2005,TL005,13,7
+S200,Chúa tể những chiếc nhẫn,J.R.R. Tolkien,1954,TL002,15,8

@@ -118,7 +118,7 @@ namespace QuanLyThuVien.Models
                 if (parts.Length == 7)
                 {
                     DateTime ngaySinh = DateTime.ParseExact(parts[3], "dd/MM/yyyy",
-                                System.Globalization.CultureInfo.InvariantCulture); ;
+                                System.Globalization.CultureInfo.InvariantCulture);
                     User user = new User(parts[0], parts[1], parts[2], ngaySinh, parts[4], parts[5], parts[6]);
                     dsUser.Add(user);
                 }

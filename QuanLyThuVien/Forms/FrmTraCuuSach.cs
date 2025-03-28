@@ -30,6 +30,7 @@ namespace QuanLyThuVien.Forms
         {
             hienThiSach(dsSach);
             hienThiTheLoai();
+            numEnd.Value = numEnd.Maximum = numStart.Maximum = DateTime.Now.Year;
         }
 
         private void hienThiSach(List<Sach> ds)
@@ -56,23 +57,31 @@ namespace QuanLyThuVien.Forms
         }
         private void hienThiTheLoai()
         {
+            cbTheLoai.Items.Add("Tất cả");
             foreach (TheLoai tl in dsTheLoai)
             {
                 cbTheLoai.Items.Add(tl.TenTheLoai);
             }
+            cbTheLoai.Items.Add("Khác");
+            cbTheLoai.SelectedIndex = 0;
         }
 
         private void btTimNC_Click(object sender, EventArgs e)
         {
             List<Sach> ds = dsSach.FindAll(s =>
             {
-                string tenTL = dsTheLoai.Find(tl => tl.MaTheLoai == s.MaTheLoai).TenTheLoai;
-                return s.MaSach.IndexOf(txtMaSach.Text, StringComparison.OrdinalIgnoreCase) >= 0
-                && s.TenSach.IndexOf(txtTenSach.Text, StringComparison.OrdinalIgnoreCase) >= 0
-                && s.TacGia.IndexOf(txtTacGia.Text, StringComparison.OrdinalIgnoreCase) >= 0
+                string tenTL;
+                TheLoai tl = dsTheLoai.Find(t => t.MaTheLoai == s.MaTheLoai);
+                if (tl != null)
+                    tenTL = tl.TenTheLoai;
+                else
+                    tenTL = "Khác";
+                return s.MaSach.IndexOf(txtMaSach.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
+                && s.TenSach.IndexOf(txtTenSach.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
+                && s.TacGia.IndexOf(txtTacGia.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
                 && s.NamXuatBan >= numStart.Value
                 && s.NamXuatBan <= numEnd.Value
-                && (cbTheLoai.Text == "" || tenTL == cbTheLoai.Text);
+                && (cbTheLoai.Text == "Tất cả" || tenTL == cbTheLoai.Text);
             });
             hienThiSach(ds);
         }
@@ -82,12 +91,20 @@ namespace QuanLyThuVien.Forms
             List<Sach> ds = dsSach.FindAll(s =>
             {
                 string tenTL = dsTheLoai.Find(tl => tl.MaTheLoai == s.MaTheLoai).TenTheLoai;
-                return s.MaSach.IndexOf(txtTimNhanh.Text, StringComparison.OrdinalIgnoreCase) >= 0
-                || s.TenSach.IndexOf(txtTimNhanh.Text, StringComparison.OrdinalIgnoreCase) >= 0
-                || s.TacGia.IndexOf(txtTimNhanh.Text, StringComparison.OrdinalIgnoreCase) >= 0
-                || tenTL.IndexOf(txtTimNhanh.Text, StringComparison.OrdinalIgnoreCase)>=0;
+                return s.MaSach.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
+                || s.TenSach.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
+                || s.TacGia.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
+                || tenTL.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase)>=0;
             });
             hienThiSach(ds);
+        }
+
+        private void btClear_Click(object sender, EventArgs e)
+        {
+            txtMaSach.Text = txtTacGia.Text = txtTenSach.Text = "";
+            cbTheLoai.SelectedIndex = 0;
+            numStart.Value = 1000;
+            numEnd.Value = DateTime.Now.Year;
         }
     }
 }

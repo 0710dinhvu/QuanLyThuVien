@@ -107,7 +107,8 @@ namespace QuanLyThuVien.Models
             }
         }
 
-        public PhieuMuon(string maPhieu, string maSach, string tenDangNhap, DateTime ngayMuon, DateTime ngayTraDuKien, string trangThai, DateTime? ngayTraThucTe = null)
+        public PhieuMuon(string maPhieu, string maSach, string tenDangNhap, DateTime ngayMuon,
+            DateTime ngayTraDuKien, string trangThai, DateTime? ngayTraThucTe = null)
         {
             this.maPhieu = maPhieu;
             this.maSach = maSach;
@@ -117,6 +118,11 @@ namespace QuanLyThuVien.Models
             this.trangThai = trangThai;
             this.ngayTraThucTe = ngayTraThucTe;
         }
-
+        public override string ToString()
+        {
+            return String.Format("{0},{1},{2},{3},{4},{5},{6}", maPhieu, maSach, tenDangNhap,
+                ngayMuon.ToString("dd/MM/yyyy"), ngayTraDuKien.ToString("dd/MM/yyyy"),
+                trangThai, NgayTraThucTe?.ToString("dd/MM/yyyy") ?? "");
+        }
     }
 }

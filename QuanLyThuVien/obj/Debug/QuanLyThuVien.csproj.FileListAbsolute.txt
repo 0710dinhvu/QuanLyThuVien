@@ -9,6 +9,10 @@ D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmMain.resources
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmTraCuuSach.resources
-D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.Test.resources
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmThueSach.resources
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmTraSach.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmQLSach.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmQLPhieuMuon.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmQLTheLoai.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmQLUser.resources
+D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmTaiKhoan.resources

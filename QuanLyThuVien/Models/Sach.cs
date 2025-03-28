@@ -58,7 +58,8 @@ namespace QuanLyThuVien.Models
             set { maTheLoai = value; }
         }
 
-        public Sach(string maSach, string tenSach, string tacGia, int namXuatBan, string maTheLoai, int soLuong, int soLuongConLai)
+        public Sach(string maSach, string tenSach, string tacGia, int namXuatBan, 
+            string maTheLoai, int soLuong, int soLuongConLai)
         {
             this.maSach = maSach;
             this.tenSach = tenSach;
@@ -67,6 +68,11 @@ namespace QuanLyThuVien.Models
             this.soLuong = soLuong;
             this.soLuongConLai = soLuongConLai;
             this.maTheLoai = maTheLoai;
+        }
+        public override string ToString()
+        {
+            return String.Format("{0},{1},{2},{3},{4},{5},{6}", maSach, tenSach, tacGia, namXuatBan,
+                maTheLoai, soLuong, SoLuongConLai);
         }
     }
 }

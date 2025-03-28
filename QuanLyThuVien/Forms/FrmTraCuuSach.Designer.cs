@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "S001",
             "Đêm Trường Tăm Tối",
             "Tử Kim Trần",
@@ -63,6 +63,7 @@
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.txtTenSach = new System.Windows.Forms.TextBox();
             this.txtMaSach = new System.Windows.Forms.TextBox();
+            this.btClear = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -86,10 +87,10 @@
             this.lvSach.FullRowSelect = true;
             this.lvSach.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvSach.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
-            this.lvSach.Location = new System.Drawing.Point(0, 236);
+            listViewItem3});
+            this.lvSach.Location = new System.Drawing.Point(0, 265);
             this.lvSach.Name = "lvSach";
-            this.lvSach.Size = new System.Drawing.Size(1242, 556);
+            this.lvSach.Size = new System.Drawing.Size(1242, 527);
             this.lvSach.TabIndex = 0;
             this.lvSach.UseCompatibleStateImageBehavior = false;
             this.lvSach.View = System.Windows.Forms.View.Details;
@@ -138,7 +139,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1242, 239);
+            this.tabControl1.Size = new System.Drawing.Size(1242, 267);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -151,7 +152,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1234, 206);
+            this.tabPage1.Size = new System.Drawing.Size(1234, 234);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tìm nhanh";
             // 
@@ -190,6 +191,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Azure;
+            this.tabPage2.Controls.Add(this.btClear);
             this.tabPage2.Controls.Add(this.btTimNC);
             this.tabPage2.Controls.Add(this.cbTheLoai);
             this.tabPage2.Controls.Add(this.numEnd);
@@ -206,7 +208,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1234, 206);
+            this.tabPage2.Size = new System.Drawing.Size(1234, 234);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tìm nâng cao";
             // 
@@ -256,12 +258,12 @@
             // 
             this.numStart.Location = new System.Drawing.Point(782, 38);
             this.numStart.Maximum = new decimal(new int[] {
-            2100,
+            2025,
             0,
             0,
             0});
             this.numStart.Minimum = new decimal(new int[] {
-            1800,
+            1000,
             0,
             0,
             0});
@@ -269,7 +271,7 @@
             this.numStart.Size = new System.Drawing.Size(163, 27);
             this.numStart.TabIndex = 2;
             this.numStart.Value = new decimal(new int[] {
-            1800,
+            1000,
             0,
             0,
             0});
@@ -344,10 +346,24 @@
             // 
             // txtMaSach
             // 
+            this.txtMaSach.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMaSach.Location = new System.Drawing.Point(282, 34);
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.Size = new System.Drawing.Size(201, 27);
             this.txtMaSach.TabIndex = 0;
+            // 
+            // btClear
+            // 
+            this.btClear.BackColor = System.Drawing.Color.LightCyan;
+            this.btClear.FlatAppearance.BorderSize = 0;
+            this.btClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btClear.Location = new System.Drawing.Point(878, 173);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(67, 39);
+            this.btClear.TabIndex = 52;
+            this.btClear.Text = "Clear";
+            this.btClear.UseVisualStyleBackColor = false;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // FrmTraCuuSach
             // 
@@ -401,5 +417,6 @@
         private System.Windows.Forms.ComboBox cbTheLoai;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btTimNC;
+        private System.Windows.Forms.Button btClear;
     }
 }

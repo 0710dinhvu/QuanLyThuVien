@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmAboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,12 +119,6 @@
     <Compile Include="Forms\FrmQLPhieuMuon.Designer.cs">
       <DependentUpon>FrmQLPhieuMuon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\PhieuMuon.cs" />
     <Compile Include="Models\QuanLyTep.cs" />
     <Compile Include="Models\Sach.cs" />
@@ -144,6 +132,21 @@
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQLPhieuMuon.resx">
+      <DependentUpon>FrmQLPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQLSach.resx">
+      <DependentUpon>FrmQLSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQLTheLoai.resx">
+      <DependentUpon>FrmQLTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQLUser.resx">
+      <DependentUpon>FrmQLUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTaiKhoan.resx">
+      <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmThueSach.resx">
       <DependentUpon>FrmThueSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,9 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTraSach.resx">
       <DependentUpon>FrmTraSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -217,6 +217,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

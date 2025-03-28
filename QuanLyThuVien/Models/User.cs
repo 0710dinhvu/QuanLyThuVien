@@ -12,7 +12,7 @@ namespace QuanLyThuVien.Models
         private string matKhau;
         private string hoTen;
         private DateTime ngaySinh;
-        private string queQuan;
+        private string gioiTinh;
         private string diaChi;
         private string soDienThoai;
 
@@ -40,10 +40,10 @@ namespace QuanLyThuVien.Models
             set { ngaySinh = value; }
         }
 
-        public string QueQuan
+        public string GioiTinh
         {
-            get { return queQuan; }
-            set { queQuan = value; }
+            get { return gioiTinh; }
+            set { gioiTinh = value; }
         }
 
         public string DiaChi
@@ -58,15 +58,21 @@ namespace QuanLyThuVien.Models
             set { soDienThoai = value; }
         }
 
-        public User(string tenDangNhap, string matKhau, string hoTen, DateTime ngaySinh, string queQuan, string diaChi, string soDienThoai)
+        public User(string tenDangNhap, string matKhau, string hoTen, DateTime ngaySinh,
+            string gioiTinh, string diaChi, string soDienThoai)
         {
             this.tenDangNhap = tenDangNhap;
             this.matKhau = matKhau;
             this.hoTen = hoTen;
             this.ngaySinh = ngaySinh;
-            this.queQuan = queQuan;
+            this.gioiTinh = gioiTinh;
             this.diaChi = diaChi;
             this.soDienThoai = soDienThoai;
+        }
+        public override string ToString()
+        {
+            return String.Format("{0},{1},{2},{3},{4},{5},{6}", tenDangNhap, matKhau, hoTen,
+                ngaySinh.ToString("dd/MM/yyyy"), gioiTinh, diaChi, soDienThoai);
         }
     }
 }

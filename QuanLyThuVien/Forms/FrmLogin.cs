@@ -59,14 +59,7 @@ namespace QuanLyThuVien.Forms
 
         private User CheckLogin(string username, string password)
         {
-            foreach (User user in dsUser)
-            {
-                if (user.TenDangNhap == username && user.MatKhau == password)
-                {
-                    return user;
-                }
-            }
-            return null;
+            return dsUser.Find(u=>u.TenDangNhap == username && u.MatKhau == password);
         }
 
         private void btLogin_Click(object sender, EventArgs e)
@@ -79,7 +72,11 @@ namespace QuanLyThuVien.Forms
             if (user != null)
             {
                 FrmMain mainForm = new FrmMain(user,dsUser,this);
-                
+
+                txtUserName.Text = "";
+                txtPassword.Text = "";
+                txtUserName.Focus();
+                cbHienThiMK.Checked = false;
                 this.Hide();
                 mainForm.Show();
             }
@@ -98,6 +95,41 @@ namespace QuanLyThuVien.Forms
         private void btMnm_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void txtUserName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtPassword.Focus();
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                this.btLogin_Click(sender, e);
+        }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style |= 0x20000;
+                return cp;
+            }
+        }
+
+        private void cbHienThiMK_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbHienThiMK.Checked)
+            {
+                cbHienThiMK.BackgroundImage = Properties.Resources.view;
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                cbHienThiMK.BackgroundImage = Properties.Resources.close_eye;
+                txtPassword.UseSystemPasswordChar = true;
+            }
         }
     }
 }

@@ -28,5 +28,9 @@ namespace QuanLyThuVien.Models
             this.maTheLoai = maTheLoai;
             this.tenTheLoai = tenTheLoai;
         }
+        public override string ToString()
+        {
+            return String.Format("{0},{1}", maTheLoai, tenTheLoai);
+        }
     }
 }

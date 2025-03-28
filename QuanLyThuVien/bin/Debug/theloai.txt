@@ -1,20 +1,15 @@
-TL001,Văn học
-TL002,Khoa học
-TL003,Lịch sử
-TL004,Công nghệ
-TL005,Nghệ thuật
-TL006,Kinh tế
-TL007,Tâm lý học
-TL008,Y học
-TL009,Thể thao
-TL010,Du lịch
-TL011,Triết học
-TL012,Chính trị
-TL013,Thiếu nhi
-TL014,Kỹ năng sống
-TL015,Ngôn ngữ học
-TL016,Viễn tưởng
-TL017,Truyện tranh
-TL018,Nông nghiệp
-TL019,Kỹ thuật
-TL020,Môi trường
+TL001,Tiểu thuyết  
+TL002,Viễn tưởng  
+TL003,Kinh dị  
+TL004,Trinh thám  
+TL005,Lãng mạn  
+TL006,Hài hước  
+TL007,Giáo dục  
+TL008,Tâm lý  
+TL009,Thiếu nhi  
+TL010,Lịch sử  
+TL011,Kỹ năng  
+TL012,Chính trị  
+TL013,Tôn giáo  
+TL014,Khoa học  
+TL015,Du ký

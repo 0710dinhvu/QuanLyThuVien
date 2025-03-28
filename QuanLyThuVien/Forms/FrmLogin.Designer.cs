@@ -40,7 +40,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btMnm = new System.Windows.Forms.Button();
+            this.cbHienThiMK = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +56,7 @@
             this.txtUserName.Size = new System.Drawing.Size(292, 27);
             this.txtUserName.TabIndex = 0;
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUserName_KeyDown);
             // 
             // txtPassword
             // 
@@ -68,6 +69,7 @@
             this.txtPassword.TabIndex = 1;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // label1
             // 
@@ -182,21 +184,19 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // btMnm
+            // cbHienThiMK
             // 
-            this.btMnm.AutoSize = true;
-            this.btMnm.BackgroundImage = global::QuanLyThuVien.Properties.Resources.minus__1_;
-            this.btMnm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btMnm.FlatAppearance.BorderSize = 0;
-            this.btMnm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMnm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMnm.ForeColor = System.Drawing.Color.White;
-            this.btMnm.Location = new System.Drawing.Point(387, 12);
-            this.btMnm.Name = "btMnm";
-            this.btMnm.Size = new System.Drawing.Size(27, 35);
-            this.btMnm.TabIndex = 6;
-            this.btMnm.UseVisualStyleBackColor = true;
-            this.btMnm.Click += new System.EventHandler(this.btMnm_Click);
+            this.cbHienThiMK.Appearance = System.Windows.Forms.Appearance.Button;
+            this.cbHienThiMK.BackgroundImage = global::QuanLyThuVien.Properties.Resources.close_eye;
+            this.cbHienThiMK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cbHienThiMK.FlatAppearance.BorderSize = 0;
+            this.cbHienThiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbHienThiMK.Location = new System.Drawing.Point(385, 382);
+            this.cbHienThiMK.Name = "cbHienThiMK";
+            this.cbHienThiMK.Size = new System.Drawing.Size(25, 25);
+            this.cbHienThiMK.TabIndex = 57;
+            this.cbHienThiMK.UseVisualStyleBackColor = true;
+            this.cbHienThiMK.CheckedChanged += new System.EventHandler(this.cbHienThiMK_CheckedChanged);
             // 
             // FrmLogin
             // 
@@ -204,7 +204,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(471, 549);
-            this.Controls.Add(this.btMnm);
+            this.Controls.Add(this.cbHienThiMK);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btClose);
@@ -245,6 +245,6 @@
         private System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btMnm;
+        private System.Windows.Forms.CheckBox cbHienThiMK;
     }
 }

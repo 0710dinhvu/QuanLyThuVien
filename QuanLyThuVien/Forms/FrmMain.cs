@@ -27,7 +27,6 @@ namespace QuanLyThuVien.Forms
         {
             InitializeComponent();
             LamFormboTron();
-            
         }
         
 
@@ -161,6 +160,7 @@ namespace QuanLyThuVien.Forms
             subMenuQL.Visible = false;
             lbTenMenu.Text = "Tài khoản";
             FrmTaiKhoan f = new FrmTaiKhoan(user, dsUser);
+            panel3.BackColor = Color.FloralWhite;
             moForm(f);
         }
 
@@ -170,6 +170,7 @@ namespace QuanLyThuVien.Forms
             subMenuQL.Visible = false;
             lbTenMenu.Text = "About us";
             FrmAboutUs f = new FrmAboutUs();
+            panel3.BackColor = Color.Azure;
             moForm(f);
         }
 
@@ -177,6 +178,7 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Tra cứu sách";
             FrmTraCuuSach f = new FrmTraCuuSach(dsSach, dsTheLoai);
+            panel3.BackColor = Color.Azure;
             moForm(f);
         }
 
@@ -184,6 +186,7 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Thuê sách";
             FrmThueSach f = new FrmThueSach(dsPhieuMuon, user, dsSach);
+            panel3.BackColor = Color.Azure;
             moForm(f);
         }
 
@@ -191,6 +194,7 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Trả sách";
             FrmTraSach f = new FrmTraSach(dsPhieuMuon, user, dsSach);
+            panel3.BackColor = Color.Azure;
             moForm(f);
         }
 
@@ -198,13 +202,15 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Quản lý sách";
             FrmQLSach f = new FrmQLSach(dsSach, dsTheLoai);
+            panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
 
         private void btQLTheLoai_Click(object sender, EventArgs e)
         {
             lbTenMenu.Text = "Quản lý thể loại";
-            FrmQLTheLoai f = new FrmQLTheLoai(dsTheLoai);
+            FrmQLTheLoai f = new FrmQLTheLoai(dsTheLoai, dsSach,dsPhieuMuon);
+            panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
 
@@ -212,6 +218,7 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Quản lý người dùng";
             FrmQLUser f = new FrmQLUser(dsUser);
+            panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
 
@@ -219,6 +226,7 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Quản lý phiếu mượn";
             FrmQLPhieuMuon f = new FrmQLPhieuMuon(dsSach, dsUser, dsPhieuMuon);
+            panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
 
@@ -226,17 +234,36 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Thống kê";
             FrmThongKe f = new FrmThongKe(dsPhieuMuon);
+            panel3.BackColor = Color.Azure;
             moForm(f);
         }
 
         private void moForm(Form f)
         {
+            if (pnForm.Controls.Count > 0)
+            {
+                Form oldForm = pnForm.Controls[0] as Form;
+                if (oldForm != null)
+                {
+                    oldForm.Close(); // Đóng form cũ
+                }
+            }
             pnForm.Controls.Clear();
             f.FormBorderStyle = FormBorderStyle.None;
             f.Dock = DockStyle.Fill;
             f.TopLevel = false;
             pnForm.Controls.Add(f);
             f.Show();
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style |= 0x20000;
+                return cp;
+            }
         }
 
     }
