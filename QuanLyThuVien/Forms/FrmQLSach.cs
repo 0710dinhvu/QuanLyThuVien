@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyThuVien.Models;
+using OfficeOpenXml;
 
 namespace QuanLyThuVien.Forms
 {
@@ -15,14 +16,16 @@ namespace QuanLyThuVien.Forms
     {
         List<Sach> dsSach;
         List<TheLoai> dsTheLoai;
+        FrmMain fMain;
         public FrmQLSach()
         {
             InitializeComponent();
         }
-        public FrmQLSach(List<Sach> dsSach, List<TheLoai> dsTheLoai) : this()
+        public FrmQLSach(List<Sach> dsSach, List<TheLoai> dsTheLoai, FrmMain fMain) : this()
         {
             this.dsSach = dsSach;
             this.dsTheLoai = dsTheLoai;
+            this.fMain = fMain;
         }
         private void HienThiTheLoai()
         {
@@ -270,6 +273,53 @@ namespace QuanLyThuVien.Forms
             lbThongBao.Text = "";
             timer1.Enabled = false;
         }
-        
+
+        private void openMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "File txt|*.txt|File word|*.docx|File excel|*.xlsx;*.xlsm|File xml|*.xml|All file|*.*";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    dsSach.Clear();
+                    dsSach.AddRange(QuanLyTep.DocFileSach(dlg.FileName));
+                    hienThiSach(dsSach);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đọc file: "+ex.Message);
+            }
+            
+        }
+
+        private void saveMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyTep.luuDSSach("sach.txt",dsSach);
+        }
+
+        private void saveAsMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            dlg.Filter = "File txt|*.txt|File word|*.docx|File excel|*.xlsx;*.xlsm|File xml|*.xml|All file|*.*";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    QuanLyTep.luuDSSach(dlg.FileName, dsSach);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu file: " + ex.Message);
+            }
+
+        }
+
+        private void saveAllMenuItem_Click(object sender, EventArgs e)
+        {
+            fMain.SaveAll();
+        }
     }
 }

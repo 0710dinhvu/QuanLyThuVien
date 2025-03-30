@@ -1,8 +1,6 @@
-TL001,Tiểu thuyết  
 TL002,Viễn tưởng  
 TL003,Kinh dị  
 TL004,Trinh thám  
-TL005,Lãng mạn  
 TL006,Hài hước  
 TL007,Giáo dục  
 TL008,Tâm lý  

@@ -69,7 +69,7 @@ namespace QuanLyThuVien.Forms
         {
             try
             {
-                return QuanLyTep.docFileSach(link);
+                return QuanLyTep.DocFileSach(link);
             }
             catch (Exception ex)
             {
@@ -122,8 +122,10 @@ namespace QuanLyThuVien.Forms
 
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
+            this.SaveAll();
             if (choPhepTatFormLogin)
                 fLogin.Close();
+
         }
 
         private void btClose_Click(object sender, EventArgs e)
@@ -201,7 +203,7 @@ namespace QuanLyThuVien.Forms
         private void btQLSach_Click(object sender, EventArgs e)
         {
             lbTenMenu.Text = "Quản lý sách";
-            FrmQLSach f = new FrmQLSach(dsSach, dsTheLoai);
+            FrmQLSach f = new FrmQLSach(dsSach, dsTheLoai,this);
             panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
@@ -209,7 +211,7 @@ namespace QuanLyThuVien.Forms
         private void btQLTheLoai_Click(object sender, EventArgs e)
         {
             lbTenMenu.Text = "Quản lý thể loại";
-            FrmQLTheLoai f = new FrmQLTheLoai(dsTheLoai, dsSach,dsPhieuMuon);
+            FrmQLTheLoai f = new FrmQLTheLoai(dsTheLoai, dsSach,dsPhieuMuon,this);
             panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
@@ -217,7 +219,7 @@ namespace QuanLyThuVien.Forms
         private void btQLNguoiDung_Click(object sender, EventArgs e)
         {
             lbTenMenu.Text = "Quản lý người dùng";
-            FrmQLUser f = new FrmQLUser(dsUser);
+            FrmQLUser f = new FrmQLUser(dsUser,this);
             panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
@@ -225,7 +227,7 @@ namespace QuanLyThuVien.Forms
         private void btQLPhieuMuon_Click(object sender, EventArgs e)
         {
             lbTenMenu.Text = "Quản lý phiếu mượn";
-            FrmQLPhieuMuon f = new FrmQLPhieuMuon(dsSach, dsUser, dsPhieuMuon);
+            FrmQLPhieuMuon f = new FrmQLPhieuMuon(dsSach, dsUser, dsPhieuMuon,this);
             panel3.BackColor = Color.LightSteelBlue;
             moForm(f);
         }
@@ -264,6 +266,14 @@ namespace QuanLyThuVien.Forms
                 cp.Style |= 0x20000;
                 return cp;
             }
+        }
+
+        public void SaveAll()
+        {
+            QuanLyTep.luuDSSach("sach.txt", dsSach);
+            QuanLyTep.luuDSTheLoai("theloai.txt", dsTheLoai);
+            QuanLyTep.luuDSPhieuMuon("phieumuon.txt", dsPhieuMuon);
+            QuanLyTep.luuDSUser("users.txt", dsUser);
         }
 
     }

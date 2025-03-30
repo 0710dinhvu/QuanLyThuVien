@@ -58,6 +58,8 @@ namespace QuanLyThuVien.Models
             set { maTheLoai = value; }
         }
 
+        public Sach() { }
+
         public Sach(string maSach, string tenSach, string tacGia, int namXuatBan, 
             string maTheLoai, int soLuong, int soLuongConLai)
         {
