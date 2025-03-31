@@ -19,7 +19,7 @@ namespace QuanLyThuVien.Forms
         public FrmLogin()
         {
             InitializeComponent();
-            this.dsUser = TaiUserTuFile("users.txt");
+            this.dsUser = TaiUserTuFile(Application.StartupPath + @"\users.txt");
         }
 
         private List<User> TaiUserTuFile(String link)

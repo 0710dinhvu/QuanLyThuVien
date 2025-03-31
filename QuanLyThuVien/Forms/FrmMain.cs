@@ -57,9 +57,9 @@ namespace QuanLyThuVien.Forms
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            this.dsTheLoai = DocFileTheLoai("theloai.txt");
-            this.dsSach = DocFileSach("sach.txt");
-            this.dsPhieuMuon = DocFilePhieuMuon("phieumuon.txt");
+            this.dsTheLoai = DocFileTheLoai(Application.StartupPath + @"\theloai.txt");
+            this.dsSach = DocFileSach(Application.StartupPath + @"\sach.txt");
+            this.dsPhieuMuon = DocFilePhieuMuon(Application.StartupPath + @"\phieumuon.txt");
 
             FrmTraCuuSach f = new FrmTraCuuSach(dsSach, dsTheLoai);
             moForm(f);
@@ -270,10 +270,10 @@ namespace QuanLyThuVien.Forms
 
         public void SaveAll()
         {
-            QuanLyTep.luuDSSach("sach.txt", dsSach);
-            QuanLyTep.luuDSTheLoai("theloai.txt", dsTheLoai);
-            QuanLyTep.luuDSPhieuMuon("phieumuon.txt", dsPhieuMuon);
-            QuanLyTep.luuDSUser("users.txt", dsUser);
+            QuanLyTep.luuDSSach(Application.StartupPath + @"\sach.txt", dsSach);
+            QuanLyTep.luuDSTheLoai(Application.StartupPath + @"\theloai.txt", dsTheLoai);
+            QuanLyTep.luuDSPhieuMuon(Application.StartupPath + @"\phieumuon.txt", dsPhieuMuon);
+            QuanLyTep.luuDSUser(Application.StartupPath + @"\users.txt", dsUser);
         }
 
     }

@@ -218,7 +218,7 @@ namespace QuanLyThuVien.Forms
 
         private void saveMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLyTep.luuDSTheLoai("theloai.txt", dsTheLoai);
+            QuanLyTep.luuDSTheLoai(Application.StartupPath + @"\theloai.txt", dsTheLoai);
         }
 
         private void saveAsMenuItem_Click(object sender, EventArgs e)

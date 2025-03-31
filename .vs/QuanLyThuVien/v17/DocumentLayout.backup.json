@@ -3,19 +3,35 @@
   "WorkspaceRootPath": "D:\\Git\\QuanLyThuVien\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmqlphieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmqlphieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|D:\\Git\\QuanLyThuVien\\quanlythuvien\\forms\\frmqluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmqluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmqltheloai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmqltheloai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmqlsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmqlsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|D:\\Git\\QuanLyThuVien\\quanlythuvien\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmqluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmqluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|D:\\Git\\QuanLyThuVien\\quanlythuvien\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -31,12 +47,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmQLPhieuMuon.cs",
+              "DocumentMoniker": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmQLPhieuMuon.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmQLPhieuMuon.cs",
+              "ToolTip": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmQLPhieuMuon.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmQLPhieuMuon.cs",
+              "ViewState": "AgIAAHcBAAAAAAAAAAAAAIUBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T05:56:01.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmQLTheLoai.cs",
+              "DocumentMoniker": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmQLTheLoai.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmQLTheLoai.cs",
+              "ToolTip": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmQLTheLoai.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmQLTheLoai.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAAAqwNwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T05:55:38.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmQLSach.cs",
+              "DocumentMoniker": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmQLSach.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmQLSach.cs",
+              "ToolTip": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmQLSach.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmQLSach.cs",
+              "ViewState": "AgIAACABAAAAAAAAAAAAACoBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T05:55:28.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmMain.cs",
+              "DocumentMoniker": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmMain.cs",
+              "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmMain.cs",
+              "ToolTip": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmMain.cs",
+              "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmMain.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAqwBMBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T05:54:39.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FrmTaiKhoan.cs",
               "DocumentMoniker": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmTaiKhoan.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmTaiKhoan.cs",
               "ToolTip": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmTaiKhoan.cs",
               "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmTaiKhoan.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowDwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAADwvzwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T04:35:47.412Z",
               "EditorCaption": ""
@@ -49,27 +117,27 @@
               "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmQLUser.cs",
               "ToolTip": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmQLUser.cs",
               "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmQLUser.cs",
-              "ViewState": "AgIAABYBAAAAAAAAAAAAAB0BAABGAAAAAAAAAA==",
+              "ViewState": "AgIAACwBAAAAAAAAAAAQwDYBAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T04:33:47.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FrmLogin.cs",
               "DocumentMoniker": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmLogin.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmLogin.cs",
               "ToolTip": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmLogin.cs",
               "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmLogin.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T04:33:00.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "FrmLogin.cs [Design]",
               "DocumentMoniker": "D:\\Git\\QuanLyThuVien\\QuanLyThuVien\\Forms\\FrmLogin.cs",
               "RelativeDocumentMoniker": "QuanLyThuVien\\Forms\\FrmLogin.cs",

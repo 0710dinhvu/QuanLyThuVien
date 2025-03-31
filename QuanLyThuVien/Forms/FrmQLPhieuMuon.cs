@@ -387,7 +387,7 @@ namespace QuanLyThuVien.Forms
 
         private void saveMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLyTep.luuDSPhieuMuon("phieumuon.txt", dsPhieuMuon);
+            QuanLyTep.luuDSPhieuMuon(Application.StartupPath + @"\phieumuon.txt", dsPhieuMuon);
         }
 
         private void saveAsMenuItem_Click(object sender, EventArgs e)

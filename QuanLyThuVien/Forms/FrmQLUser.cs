@@ -308,7 +308,7 @@ namespace QuanLyThuVien.Forms
 
         private void saveMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLyTep.luuDSUser("users.txt",dsUser);
+            QuanLyTep.luuDSUser(Application.StartupPath + @"\users.txt", dsUser);
         }
 
         private void saveAsMenuItem_Click(object sender, EventArgs e)

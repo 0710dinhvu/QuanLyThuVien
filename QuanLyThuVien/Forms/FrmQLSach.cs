@@ -296,7 +296,7 @@ namespace QuanLyThuVien.Forms
 
         private void saveMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLyTep.luuDSSach("sach.txt",dsSach);
+            QuanLyTep.luuDSSach(Application.StartupPath + @"\sach.txt", dsSach);
         }
 
         private void saveAsMenuItem_Click(object sender, EventArgs e)
