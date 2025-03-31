@@ -37,7 +37,7 @@ namespace QuanLyThuVien.Forms
 
         private void FrmLogin_Paint(object sender, PaintEventArgs e)
         {
-            int radius = 30;
+            int radius = 20;
             GraphicsPath path = new GraphicsPath();
             path.AddArc(0, 0, radius, radius, 180, 90); 
             path.AddArc(this.Width - radius, 0, radius, radius, 270, 90); 
