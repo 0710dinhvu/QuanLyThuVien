@@ -277,7 +277,7 @@ namespace QuanLyThuVien.Forms
         private void openMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "File txt|*.txt|File word|*.docx|File excel|*.xlsx;*.xlsm|File xml|*.xml|All file|*.*";
+            dlg.Filter = "File txt|*.txt|File word|*.docx|File excel|*.xlsx;*.xlsm|File xml|*.xml|File books|*.books|All file|*.*";
             try
             {
                 if (dlg.ShowDialog() == DialogResult.OK)
@@ -302,7 +302,7 @@ namespace QuanLyThuVien.Forms
         private void saveAsMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
-            dlg.Filter = "File txt|*.txt|File word|*.docx|File excel|*.xlsx;*.xlsm|File xml|*.xml|All file|*.*";
+            dlg.Filter = "File txt|*.txt|File word|*.docx|File excel|*.xlsx;*.xlsm|File xml|*.xml|File books|*.books|All file|*.*";
             try
             {
                 if (dlg.ShowDialog() == DialogResult.OK)

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyThuVien.Models
 {
+    [Serializable]
     public class Sach
     {
         private string maSach;

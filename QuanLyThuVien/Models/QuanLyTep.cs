@@ -6,8 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Xceed.Words.NET;
 using OfficeOpenXml;
-using System.Linq;
 using System.Xml.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.InteropServices.ComTypes;
 
 
 namespace QuanLyThuVien.Models
@@ -45,6 +47,8 @@ namespace QuanLyThuVien.Models
                 luuDSSachExcel(link, dsSach);
             else if (link.EndsWith(".xml"))
                 luuDSSachXml(link, dsSach);
+            else if (link.EndsWith(".books"))
+                luuDSSachSerialization(link, dsSach);
                 
         }
         private static void luuDSSachTXT(string link, List<Sach> dsSach)
@@ -111,6 +115,14 @@ namespace QuanLyThuVien.Models
             )));
             doc.Save(link);
         }
+        private static void luuDSSachSerialization(string link, List<Sach> dsSach)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using (FileStream stream = new FileStream(link,FileMode.Create, FileAccess.Write))
+            {
+                bf.Serialize(stream, dsSach);
+            }
+        }
         public static void luuDSPhieuMuon(string link, List<PhieuMuon> dsPhieuMuon)
         {
             using (StreamWriter sw = new StreamWriter(link))
@@ -131,6 +143,8 @@ namespace QuanLyThuVien.Models
                 return docFileSachExcel(link);
             else if (link.EndsWith(".xml"))
                 return docFileSachXML(link);
+            else if (link.EndsWith(".books"))
+                return docFileSachSerialization(link);
             return null;
         }
         private static List<Sach> docFileSachTXT(string link)
@@ -211,6 +225,14 @@ namespace QuanLyThuVien.Models
             }).ToList();
         }
 
+        private static List<Sach> docFileSachSerialization(string link)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using (FileStream stream = new FileStream(link, FileMode.Open, FileAccess.Read))
+            {
+                return (List<Sach>)bf.Deserialize(stream);
+            }
+        }
         public static List<TheLoai> docFileTheLoai(string link)
         {
             List<TheLoai> dsTheLoai = new List<TheLoai>();
