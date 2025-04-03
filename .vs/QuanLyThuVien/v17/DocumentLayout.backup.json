@@ -11,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmqlsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\models\\quanlytep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|D:\\Git\\QuanLyThuVien\\quanlythuvien\\models\\quanlytep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\models\\quanlytep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|d:\\git\\quanlythuvien\\quanlythuvien\\forms\\frmqlphieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|D:\\Git\\QuanLyThuVien\\quanlythuvien\\forms\\frmqlphieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E9751A9-016F-445A-B411-AC8DCFF48A57}|QuanLyThuVien\\QuanLyThuVien.csproj|solutionrelative:quanlythuvien\\forms\\frmqlphieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -75,8 +75,7 @@
               "RelativeToolTip": "QuanLyThuVien\\Models\\QuanLyTep.cs",
               "ViewState": "AgIAAH8AAAAAAAAAAAAIwJMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:21:13.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T16:21:13.807Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmQLPhieuMuon.cs",
               "ViewState": "AgIAAHQBAAAAAAAAAAAAAIUBAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T05:56:01.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T05:56:01.006Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "QuanLyThuVien\\Forms\\FrmQLSach.cs",
               "ViewState": "AgIAABEBAAAAAAAAAAAuwBcBAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T05:55:28.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T05:55:28.522Z"
             },
             {
               "$type": "Document",

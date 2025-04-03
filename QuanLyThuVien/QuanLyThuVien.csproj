@@ -172,6 +172,9 @@
     <EmbeddedResource Include="Forms\FrmTaiKhoan.resx">
       <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmThongKe.resx">
+      <DependentUpon>FrmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmThueSach.resx">
       <DependentUpon>FrmThueSach.cs</DependentUpon>
     </EmbeddedResource>

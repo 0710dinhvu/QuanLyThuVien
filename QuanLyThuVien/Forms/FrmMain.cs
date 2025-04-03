@@ -236,7 +236,7 @@ namespace QuanLyThuVien.Forms
         {
             lbTenMenu.Text = "Thống kê";
             FrmThongKe f = new FrmThongKe(dsPhieuMuon);
-            panel3.BackColor = Color.Azure;
+            panel3.BackColor = Color.White;
             moForm(f);
         }
 
