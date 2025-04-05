@@ -4,6 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xceed.Words.NET;
+using OfficeOpenXml;
+using System.Xml.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.InteropServices.ComTypes;
+
 
 namespace QuanLyThuVien.Models
 {
@@ -32,12 +39,88 @@ namespace QuanLyThuVien.Models
         }
         public static void luuDSSach(string link, List<Sach> dsSach)
         {
+            if (link.EndsWith(".txt"))
+                luuDSSachTXT(link, dsSach);
+            else if (link.EndsWith(".docx"))
+                luuDSSachDocx(link, dsSach);
+            else if (link.EndsWith(".xlsx") || link.EndsWith(".xlsm"))
+                luuDSSachExcel(link, dsSach);
+            else if (link.EndsWith(".xml"))
+                luuDSSachXml(link, dsSach);
+            else if (link.EndsWith(".books"))
+                luuDSSachSerialization(link, dsSach);
+                
+        }
+        private static void luuDSSachTXT(string link, List<Sach> dsSach)
+        {
             using (StreamWriter sw = new StreamWriter(link))
             {
                 foreach (var s in dsSach)
                 {
                     sw.WriteLine(s.ToString());
                 }
+            }
+        }
+        private static void luuDSSachDocx(string link, List<Sach> dsSach)
+        {
+            using(DocX data= DocX.Create(link))
+            {
+                foreach(Sach s in dsSach)
+                {
+                    data.InsertParagraph(s.ToString());
+                }
+                data.Save();
+            }
+        }
+        private static void luuDSSachExcel(string link, List<Sach> dsSach) 
+        {
+            ExcelPackage.License.SetNonCommercialOrganization("Bài tập nhóm");
+            using (ExcelPackage package = new ExcelPackage())
+            {
+                ExcelWorksheet sheet = package.Workbook.Worksheets.Add("Sheet1");
+                sheet.Cells[1, 1].Value = "Mã sách";
+                sheet.Cells[1, 2].Value = "Tên sách";
+                sheet.Cells[1, 3].Value = "Tác giả";
+                sheet.Cells[1, 4].Value = "Năm XB";
+                sheet.Cells[1, 5].Value = "Mã thể loại";
+                sheet.Cells[1, 6].Value = "Số lượng";
+                sheet.Cells[1, 7].Value = "Số lượng còn lại";
+                int row = 2;
+                foreach(Sach s in dsSach)
+                {
+                    sheet.Cells[row, 1].Value = s.MaSach;
+                    sheet.Cells[row, 2].Value = s.TenSach;
+                    sheet.Cells[row, 3].Value = s.TacGia;
+                    sheet.Cells[row, 4].Value = s.NamXuatBan;
+                    sheet.Cells[row, 5].Value = s.MaTheLoai;
+                    sheet.Cells[row, 6].Value = s.SoLuong;
+                    sheet.Cells[row, 7].Value = s.SoLuongConLai;
+                    row++;
+                }
+                File.WriteAllBytes(link, package.GetAsByteArray());
+            }
+        }
+        private static void luuDSSachXml(string link, List<Sach> dsSach)
+        {
+            XDocument doc = new XDocument(new XElement("Library", dsSach.ConvertAll(s=>
+                new XElement("Sach",
+                    new XElement("maSach", s.MaSach),
+                    new XElement("tenSach", s.TenSach),
+                    new XElement("tacGia",s.TacGia),
+                    new XElement("namXuatBan",s.NamXuatBan),
+                    new XElement("maTheLoai",s.MaTheLoai),
+                    new XElement("soLuong",s.SoLuong),
+                    new XElement("soLuongConLai", s.SoLuongConLai)
+                    )
+            )));
+            doc.Save(link);
+        }
+        private static void luuDSSachSerialization(string link, List<Sach> dsSach)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using (FileStream stream = new FileStream(link,FileMode.Create, FileAccess.Write))
+            {
+                bf.Serialize(stream, dsSach);
             }
         }
         public static void luuDSPhieuMuon(string link, List<PhieuMuon> dsPhieuMuon)
@@ -50,7 +133,21 @@ namespace QuanLyThuVien.Models
                 }
             }
         }
-        public static List<Sach> docFileSach(string link)
+        public static List<Sach> DocFileSach(string link)
+        {
+            if (link.EndsWith(".txt"))
+                return docFileSachTXT(link);
+            else if (link.EndsWith(".docx"))
+                return docFileSachDOCX(link);
+            else if (link.EndsWith(".xlsx") || link.EndsWith(".xlsm"))
+                return docFileSachExcel(link);
+            else if (link.EndsWith(".xml"))
+                return docFileSachXML(link);
+            else if (link.EndsWith(".books"))
+                return docFileSachSerialization(link);
+            return null;
+        }
+        private static List<Sach> docFileSachTXT(string link)
         {
             List<Sach> dsSach = new List<Sach>();
             string[] parts;
@@ -65,6 +162,76 @@ namespace QuanLyThuVien.Models
                 }
             }
             return dsSach;
+        }
+        private static List<Sach> docFileSachDOCX(string link)
+        {
+            List<Sach> dsSach = new List<Sach>();
+            string[] parts;
+            using (DocX data = DocX.Load(link))
+            {
+                foreach (var line in data.Paragraphs)
+                {
+                    parts = line.Text.Split(',');
+                    Sach s;
+                    if (parts.Length == 7)
+                    {
+                        s = new Sach(parts[0], parts[1], parts[2], int.Parse(parts[3]), parts[4], int.Parse(parts[5]), int.Parse(parts[6]));
+                        dsSach.Add(s);
+                    }
+                }
+            }
+            return dsSach;
+        }
+        private static List<Sach> docFileSachExcel(string link)
+        {
+           
+
+            List<Sach> dsSach = new List<Sach>();
+            ExcelPackage.License.SetNonCommercialOrganization("Bài tập nhóm");
+            using (ExcelPackage package = new ExcelPackage(new FileInfo(link)))
+            {
+                ExcelWorksheet sheet = package.Workbook.Worksheets[0];
+
+                int rowCount = sheet.Dimension.Rows;
+
+                for (int row = 2; row <= rowCount; row++)
+                {
+                    Sach s = new Sach();
+                    s.MaSach = sheet.Cells[row, 1].Text;
+                    s.TenSach = sheet.Cells[row, 2].Text;
+                    s.TacGia = sheet.Cells[row, 3].Text;
+                    s.NamXuatBan = int.Parse(sheet.Cells[row, 4].Text);
+                    s.MaTheLoai = sheet.Cells[row, 5].Text;
+                    s.SoLuong = int.Parse(sheet.Cells[row, 6].Text);
+                    s.SoLuongConLai = int.Parse(sheet.Cells[row, 7].Text);
+
+                    dsSach.Add(s);
+                }
+            }
+            return dsSach;
+        }
+        private static List<Sach> docFileSachXML(string link)
+        {
+            XDocument doc = XDocument.Load(link);
+            return doc.Descendants("Sach").Select(b => new Sach()
+            {
+                MaSach = b.Element("maSach")?.Value,
+                TenSach = b.Element("tenSach")?.Value,
+                TacGia = b.Element("tacGia")?.Value,
+                NamXuatBan = int.Parse(b.Element("namXuatBan")?.Value ?? "0"),
+                MaTheLoai = b.Element("maTheLoai")?.Value,
+                SoLuong = int.Parse(b.Element("soLuong")?.Value ?? "0"),
+                SoLuongConLai = int.Parse(b.Element("soLuongConLai")?.Value ?? "0")
+            }).ToList();
+        }
+
+        private static List<Sach> docFileSachSerialization(string link)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            using (FileStream stream = new FileStream(link, FileMode.Open, FileAccess.Read))
+            {
+                return (List<Sach>)bf.Deserialize(stream);
+            }
         }
         public static List<TheLoai> docFileTheLoai(string link)
         {

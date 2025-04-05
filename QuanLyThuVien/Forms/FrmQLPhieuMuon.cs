@@ -16,15 +16,18 @@ namespace QuanLyThuVien.Forms
         List<Sach> dsSach;
         List<User> dsUser;
         List<PhieuMuon> dsPhieuMuon;
+        FrmMain fMain;
         public FrmQLPhieuMuon()
         {
             InitializeComponent();
         }
-        public FrmQLPhieuMuon(List<Sach> dsSach, List<User> dsUser, List<PhieuMuon> dsPhieuMuon) :this()
+        public FrmQLPhieuMuon(List<Sach> dsSach, List<User> dsUser,
+            List<PhieuMuon> dsPhieuMuon, FrmMain fMain) :this()
         {
             this.dsSach = dsSach;
             this.dsUser = dsUser;
             this.dsPhieuMuon = dsPhieuMuon;
+            this.fMain = fMain;
         }
 
         private void FrmQLPhieuMuon_Load(object sender, EventArgs e)
@@ -361,6 +364,52 @@ namespace QuanLyThuVien.Forms
         {
             lbThongBao.Text = "";
             timer1.Enabled = false;
+        }
+
+        private void openMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "File txt|*.txt";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    dsPhieuMuon.Clear();
+                    dsPhieuMuon.AddRange(QuanLyTep.docFilePhieuMuon(dlg.FileName));
+                    hienThiPhieuMuon(dsPhieuMuon);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đọc file: " + ex.Message);
+            }
+        }
+
+        private void saveMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyTep.luuDSPhieuMuon(Application.StartupPath + @"\phieumuon.txt", dsPhieuMuon);
+        }
+
+        private void saveAsMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            dlg.Filter = "File txt|*.txt";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    QuanLyTep.luuDSPhieuMuon(dlg.FileName, dsPhieuMuon);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu file: " + ex.Message);
+            }
+        }
+
+        private void saveAllMenuItem_Click(object sender, EventArgs e)
+        {
+            fMain.SaveAll();
         }
     }
 }

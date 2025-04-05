@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyThuVien.Forms;
+using OfficeOpenXml;
 
 namespace QuanLyThuVien
 {
@@ -15,6 +16,7 @@ namespace QuanLyThuVien
         [STAThread]
         static void Main()
         {
+            //ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogin());

@@ -16,15 +16,18 @@ namespace QuanLyThuVien.Forms
         List<TheLoai> dsTheLoai;
         List<Sach> dsSach;
         List<PhieuMuon> dsPhieuMuon;
+        FrmMain fMain;
         public FrmQLTheLoai()
         {
             InitializeComponent();
         }
-        public FrmQLTheLoai(List<TheLoai> dsTheLoai, List<Sach> dsSach, List<PhieuMuon> dsPhieuMuon):this()
+        public FrmQLTheLoai(List<TheLoai> dsTheLoai, List<Sach> dsSach,
+            List<PhieuMuon> dsPhieuMuon,FrmMain fMain):this()
         {
             this.dsTheLoai = dsTheLoai;
             this.dsSach = dsSach;
             this.dsPhieuMuon = dsPhieuMuon;
+            this.fMain = fMain;
         }
 
         private void FrmQLTheLoai_Load(object sender, EventArgs e)
@@ -192,6 +195,52 @@ namespace QuanLyThuVien.Forms
             errp.Clear();
             txtMaTL.Text = "";
             txtTenTL.Text = "";
+        }
+
+        private void openMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "File txt|*.txt";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    dsTheLoai.Clear();
+                    dsTheLoai.AddRange(QuanLyTep.docFileTheLoai(dlg.FileName));
+                    HienThiTheLoai(dsTheLoai);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đọc file: " + ex.Message);
+            }
+        }
+
+        private void saveMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyTep.luuDSTheLoai(Application.StartupPath + @"\theloai.txt", dsTheLoai);
+        }
+
+        private void saveAsMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            dlg.Filter = "File txt|*.txt";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    QuanLyTep.luuDSTheLoai(dlg.FileName, dsTheLoai);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu file: " + ex.Message);
+            }
+        }
+
+        private void saveAllMenuItem_Click(object sender, EventArgs e)
+        {
+            fMain.SaveAll();
         }
     }
 }

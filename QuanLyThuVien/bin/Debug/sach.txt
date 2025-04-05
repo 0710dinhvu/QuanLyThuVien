@@ -144,7 +144,7 @@ S143,Vũ trụ trong vỏ hạt dẻ,Stephen Hawking,2001,TL014,7,3
 S144,Lược sử thời gian,Stephen Hawking,1988,TL014,6,2
 S145,Những bí ẩn của vũ trụ,Neil deGrasse Tyson,2017,TL014,9,4
 S146,Đạo của vật lý,Fritjof Capra,1975,TL014,5,1
-S147,Súng, vi trùng và thép,Jared Diamond,1997,TL014,8,3
+S147,Cây cam ngọt của tôi,Jose Mauro,1968,TL001,5,2
 S148,Thiên đường đánh mất,John Milton,1667,TL001,6,2
 S149,Những người chết không bao giờ kể,Agatha Christie,1939,TL004,7,3
 S150,Án mạng trên sông Nile,Agatha Christie,1937,TL004,8,3
@@ -157,7 +157,7 @@ S156,Vũ trụ trong vỏ hạt dẻ,Stephen Hawking,2001,TL014,7,3
 S157,Gen: Lịch sử tương lai,Siddhartha Mukherjee,2016,TL014,6,2
 S158,Thế giới phẳng,Thomas Friedman,2005,TL014,8,3
 S159,Bản thiết kế vĩ đại,Stephen Hawking,2010,TL014,5,1
-S160,Súng, vi trùng và thép,Jared Diamond,1997,TL014,9,4
+S160,Stoner,John Williams,1965,TL06,7,3
 S161,Nghệ thuật tinh tế,Mark Manson,2016,TL011,9,4
 S162,Atomic Habits,James Clear,2018,TL011,12,5
 S163,Nghĩ ngược lại và làm khác đi,Paul Arden,2006,TL011,7,2
