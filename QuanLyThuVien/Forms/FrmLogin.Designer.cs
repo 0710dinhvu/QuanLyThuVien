@@ -36,11 +36,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.cbHienThiMK = new System.Windows.Forms.CheckBox();
             this.btClose = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbHienThiMK = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,7 +115,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(140, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 32);
+            this.label3.Size = new System.Drawing.Size(189, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "ĐĂNG NHẬP";
             // 
@@ -134,6 +134,20 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(350, 2);
             this.label5.TabIndex = 5;
+            // 
+            // cbHienThiMK
+            // 
+            this.cbHienThiMK.Appearance = System.Windows.Forms.Appearance.Button;
+            this.cbHienThiMK.BackgroundImage = global::QuanLyThuVien.Properties.Resources.close_eye;
+            this.cbHienThiMK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cbHienThiMK.FlatAppearance.BorderSize = 0;
+            this.cbHienThiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbHienThiMK.Location = new System.Drawing.Point(385, 382);
+            this.cbHienThiMK.Name = "cbHienThiMK";
+            this.cbHienThiMK.Size = new System.Drawing.Size(25, 25);
+            this.cbHienThiMK.TabIndex = 57;
+            this.cbHienThiMK.UseVisualStyleBackColor = true;
+            this.cbHienThiMK.CheckedChanged += new System.EventHandler(this.cbHienThiMK_CheckedChanged);
             // 
             // btClose
             // 
@@ -183,20 +197,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // cbHienThiMK
-            // 
-            this.cbHienThiMK.Appearance = System.Windows.Forms.Appearance.Button;
-            this.cbHienThiMK.BackgroundImage = global::QuanLyThuVien.Properties.Resources.close_eye;
-            this.cbHienThiMK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cbHienThiMK.FlatAppearance.BorderSize = 0;
-            this.cbHienThiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbHienThiMK.Location = new System.Drawing.Point(385, 382);
-            this.cbHienThiMK.Name = "cbHienThiMK";
-            this.cbHienThiMK.Size = new System.Drawing.Size(25, 25);
-            this.cbHienThiMK.TabIndex = 57;
-            this.cbHienThiMK.UseVisualStyleBackColor = true;
-            this.cbHienThiMK.CheckedChanged += new System.EventHandler(this.cbHienThiMK_CheckedChanged);
             // 
             // FrmLogin
             // 

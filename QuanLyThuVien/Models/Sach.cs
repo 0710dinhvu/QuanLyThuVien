@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyThuVien.Models
 {
+    [Serializable]
     public class Sach
     {
         private string maSach;
@@ -57,6 +58,8 @@ namespace QuanLyThuVien.Models
             get { return maTheLoai; }
             set { maTheLoai = value; }
         }
+
+        public Sach() { }
 
         public Sach(string maSach, string tenSach, string tacGia, int namXuatBan, 
             string maTheLoai, int soLuong, int soLuongConLai)

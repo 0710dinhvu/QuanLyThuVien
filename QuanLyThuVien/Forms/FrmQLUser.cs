@@ -14,13 +14,15 @@ namespace QuanLyThuVien.Forms
     public partial class FrmQLUser : Form
     {
         List<User> dsUser;
+        FrmMain fMain;
         public FrmQLUser()
         {
             InitializeComponent();
         }
-        public FrmQLUser(List<User> dsUser):this()
+        public FrmQLUser(List<User> dsUser, FrmMain fMain) :this()
         {
             this.dsUser = dsUser;
+            this.fMain = fMain;
         }
 
         private void FrmQLUser_Load(object sender, EventArgs e)
@@ -281,8 +283,54 @@ namespace QuanLyThuVien.Forms
 
         private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void openMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "File txt|*.txt";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    dsUser.Clear();
+                    dsUser.AddRange(QuanLyTep.DocFileUser(dlg.FileName));
+                    HienThiUser(dsUser);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi đọc file: " + ex.Message);
+            }
+        }
+
+        private void saveMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyTep.luuDSUser(Application.StartupPath + @"\users.txt", dsUser);
+        }
+
+        private void saveAsMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            dlg.Filter = "File txt|*.txt";
+            try
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    QuanLyTep.luuDSUser(dlg.FileName, dsUser);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu file: " + ex.Message);
+            }
+        }
+
+        private void saveAllMenuItem_Click(object sender, EventArgs e)
+        {
+            fMain.SaveAll();
         }
     }
 }
