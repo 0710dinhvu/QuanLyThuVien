@@ -64,6 +64,7 @@ namespace QuanLyThuVien.Forms
                 MessageBox.Show($"Cảm ơn bạn đã gửi phản hồi!)", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtName.Clear();
                 txtFeedBack.Clear();
+                txtEmail.Clear();
             }
             catch (Exception ex)
             {

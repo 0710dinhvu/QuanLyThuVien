@@ -20,6 +20,7 @@ namespace QuanLyThuVien.Forms
         {
             InitializeComponent();
             this.dsUser = TaiUserTuFile(Application.StartupPath + @"\users.txt");
+            this.Icon = new Icon(Application.StartupPath + @"\login.ico");
         }
 
         private List<User> TaiUserTuFile(String link)

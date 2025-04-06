@@ -52,3 +52,5 @@ D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInp
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyTh.B5137F7B.Up2Date
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
 D:\BTL\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\Git\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmAboutUs.resources
+D:\Git\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FrmThongKe.resources

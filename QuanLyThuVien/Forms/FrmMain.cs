@@ -27,6 +27,7 @@ namespace QuanLyThuVien.Forms
         {
             InitializeComponent();
             LamFormboTron();
+            this.Icon = new Icon(Application.StartupPath + @"\library.ico");
         }
         
 
@@ -172,7 +173,7 @@ namespace QuanLyThuVien.Forms
             subMenuQL.Visible = false;
             lbTenMenu.Text = "About us";
             FrmAboutUs f = new FrmAboutUs();
-            panel3.BackColor = Color.Azure;
+            panel3.BackColor = Color.FromKnownColor(KnownColor.ControlLightLight);
             moForm(f);
         }
 
