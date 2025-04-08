@@ -94,7 +94,7 @@ namespace QuanLyThuVien.Forms
             it.SubItems.Add(tenSach);
             it.SubItems.Add(p.NgayMuon.ToString("dd/MM/yyyy"));
             it.SubItems.Add(p.NgayTraDuKien.ToString("dd/MM/yyyy"));
-            it.SubItems.Add(p.NgayTraThucTe?.ToString("dd/MM/yyyy"));
+            it.SubItems.Add(p.NgayTraThucTe?.ToString("dd/MM/yyyy") ??"Chưa trả");
             it.SubItems.Add(p.TrangThai);
             lvPhieuMuon.Items.Add(it);
 
@@ -102,6 +102,10 @@ namespace QuanLyThuVien.Forms
 
             lbThongBao.Text = "Tạo thành công!";
             timer1.Enabled = true;
+            txtMaSach.Text = "";
+            cbThoiHan.SelectedIndex = -1;
+            lbNgayTra.Text = "01/01/2000";
+            txtMaSach.Focus();
         }
 
         private string TaoMaPhieu()

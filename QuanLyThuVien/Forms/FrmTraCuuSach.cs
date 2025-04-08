@@ -90,11 +90,16 @@ namespace QuanLyThuVien.Forms
         {
             List<Sach> ds = dsSach.FindAll(s =>
             {
-                string tenTL = dsTheLoai.Find(tl => tl.MaTheLoai == s.MaTheLoai).TenTheLoai;
+                TheLoai tl1 = dsTheLoai.Find(tl => tl.MaTheLoai == s.MaTheLoai);
+                string tenTL;
+                if (tl1 == null)
+                    tenTL = "";
+                else
+                    tenTL = tl1.TenTheLoai;
                 return s.MaSach.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
                 || s.TenSach.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
                 || s.TacGia.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase) >= 0
-                || tenTL.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase)>=0;
+                || (tenTL.IndexOf(txtTimNhanh.Text.Trim(), StringComparison.OrdinalIgnoreCase)>=0);
             });
             hienThiSach(ds);
         }

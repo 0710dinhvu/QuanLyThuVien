@@ -49,6 +49,8 @@ namespace QuanLyThuVien.Forms
             cbTheLoai.SelectedIndex = -1;
             numNamXB.Value = 2000;
             numSL.Value = numSLConLai.Value = 0;
+            TaoMaSach();
+            txtMaSach.Focus();
 
         }
 
@@ -121,6 +123,7 @@ namespace QuanLyThuVien.Forms
             ThemSach();
             lbThongBao.Text = "Thêm thành công!";
             timer1.Enabled = true;
+            this.btClear_Click(sender, e);
         }
         private void ThemSach()
         {
@@ -166,6 +169,7 @@ namespace QuanLyThuVien.Forms
             }
             lbThongBao.Text = "Xóa thành công!";
             timer1.Enabled = true;
+            this.btClear_Click(sender, e);
         }
 
         private void btSua_Click(object sender, EventArgs e)

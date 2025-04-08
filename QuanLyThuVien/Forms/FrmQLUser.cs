@@ -126,6 +126,7 @@ namespace QuanLyThuVien.Forms
 
             lbThongBao.Text = "Thêm thành công!";
             timer1.Enabled = true;
+            this.btClear_Click(sender, e);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -159,6 +160,7 @@ namespace QuanLyThuVien.Forms
             }
             lbThongBao.Text = "Xóa thành công!";
             timer1.Enabled = true;
+            this.btClear_Click(sender, e);
         }
 
         private void btSua_Click(object sender, EventArgs e)
@@ -228,6 +230,8 @@ namespace QuanLyThuVien.Forms
             txtUser.Text = txtUser.Text = txtDiaChi.Text = txtMatKhau.Text = txtHoTen.Text = txtSDT.Text = "";
             rdNam.Checked = true;
             dtNgaySinh.Value = DateTime.Now;
+            TaoMa();
+            txtUser.Focus();
         }
 
         private void cbTaoTuDong_CheckedChanged(object sender, EventArgs e)

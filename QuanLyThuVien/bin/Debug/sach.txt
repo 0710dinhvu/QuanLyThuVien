@@ -12,7 +12,7 @@ S011,Ông già và Biển cả,Ernest Hemingway,1952,TL001,7,2
 S012,7 Thói quen của người thành đạt,Stephen R. Covey,1989,TL011,10,4
 S013,Đi tìm lẽ sống,Viktor E. Frankl,1946,TL008,9,3
 S014,Trí tuệ Do Thái,Erich Fromm,1975,TL011,8,3
-S015,Nghìn lẻ một đêm,Unknown,2000,TL001,5,1
+S015,Nghìn lẻ một đêm,Unknown,1706,TL001,5,1
 S016,Tôi là Bêtô,Nguyễn Nhật Ánh,2007,TL009,10,4
 S017,Người trong bóng tối,Higashino Keigo,2009,TL004,8,2
 S018,Đại gia Gatsby,F. Scott Fitzgerald,1925,TL001,9,3
@@ -157,7 +157,7 @@ S156,Vũ trụ trong vỏ hạt dẻ,Stephen Hawking,2001,TL014,7,3
 S157,Gen: Lịch sử tương lai,Siddhartha Mukherjee,2016,TL014,6,2
 S158,Thế giới phẳng,Thomas Friedman,2005,TL014,8,3
 S159,Bản thiết kế vĩ đại,Stephen Hawking,2010,TL014,5,1
-S160,Stoner,John Williams,1965,TL06,7,3
+S160,Stoner,John Williams,1965,TL006,7,3
 S161,Nghệ thuật tinh tế,Mark Manson,2016,TL011,9,4
 S162,Atomic Habits,James Clear,2018,TL011,12,5
 S163,Nghĩ ngược lại và làm khác đi,Paul Arden,2006,TL011,7,2

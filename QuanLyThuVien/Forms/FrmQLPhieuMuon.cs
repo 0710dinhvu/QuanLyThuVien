@@ -81,6 +81,8 @@ namespace QuanLyThuVien.Forms
             dtNgayMuon.Value = DateTime.Now;
             dtNgayTraTT.Value = DateTime.Now;
             rdDangMuon.Checked = true;
+            TaoMaPhieu();
+            txtMaPhieu.Focus();
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -169,9 +171,9 @@ namespace QuanLyThuVien.Forms
             lvPhieuMuon.Items.Add(it);
 
             s1.SoLuongConLai -= 1;
-            TaoMaPhieu();
             lbThongBao.Text = "Thêm thành công!";
             timer1.Enabled = true;
+            this.btClear_Click(sender, e);
         }
 
         private void rdDangMuon_CheckedChanged(object sender, EventArgs e)
@@ -245,6 +247,7 @@ namespace QuanLyThuVien.Forms
             }
             lbThongBao.Text = "Xóa thành công!";
             timer1.Enabled = true;
+            this.btClear_Click(sender, e);
         }
 
         private void btSua_Click(object sender, EventArgs e)

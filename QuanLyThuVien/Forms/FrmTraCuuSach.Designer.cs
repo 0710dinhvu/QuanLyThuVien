@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "S001",
             "Đêm Trường Tăm Tối",
@@ -50,6 +51,7 @@
             this.btTimNhanh = new System.Windows.Forms.Button();
             this.txtTimNhanh = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btClear = new System.Windows.Forms.Button();
             this.btTimNC = new System.Windows.Forms.Button();
             this.cbTheLoai = new System.Windows.Forms.ComboBox();
             this.numEnd = new System.Windows.Forms.NumericUpDown();
@@ -63,7 +65,7 @@
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.txtTenSach = new System.Windows.Forms.TextBox();
             this.txtMaSach = new System.Windows.Forms.TextBox();
-            this.btClear = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -86,6 +88,7 @@
             this.lvSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvSach.FullRowSelect = true;
             this.lvSach.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvSach.HideSelection = false;
             this.lvSach.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem3});
             this.lvSach.Location = new System.Drawing.Point(0, 265);
@@ -174,6 +177,7 @@
             this.btTimNhanh.Name = "btTimNhanh";
             this.btTimNhanh.Size = new System.Drawing.Size(45, 43);
             this.btTimNhanh.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btTimNhanh, "Tìm theo mã, tên, tác giả hoặc thể loại");
             this.btTimNhanh.UseVisualStyleBackColor = true;
             this.btTimNhanh.Click += new System.EventHandler(this.btTimNhanh_Click);
             // 
@@ -187,6 +191,7 @@
             this.txtTimNhanh.Size = new System.Drawing.Size(516, 31);
             this.txtTimNhanh.TabIndex = 0;
             this.txtTimNhanh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtTimNhanh, "Tìm theo mã, tên, tác giả hoặc thể loại");
             // 
             // tabPage2
             // 
@@ -211,6 +216,19 @@
             this.tabPage2.Size = new System.Drawing.Size(1234, 234);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tìm nâng cao";
+            // 
+            // btClear
+            // 
+            this.btClear.BackColor = System.Drawing.Color.LightCyan;
+            this.btClear.FlatAppearance.BorderSize = 0;
+            this.btClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btClear.Location = new System.Drawing.Point(878, 173);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(67, 39);
+            this.btClear.TabIndex = 52;
+            this.btClear.Text = "Clear";
+            this.btClear.UseVisualStyleBackColor = false;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // btTimNC
             // 
@@ -241,7 +259,7 @@
             0,
             0});
             this.numEnd.Minimum = new decimal(new int[] {
-            1800,
+            1000,
             0,
             0,
             0});
@@ -352,18 +370,12 @@
             this.txtMaSach.Size = new System.Drawing.Size(201, 27);
             this.txtMaSach.TabIndex = 0;
             // 
-            // btClear
+            // toolTip1
             // 
-            this.btClear.BackColor = System.Drawing.Color.LightCyan;
-            this.btClear.FlatAppearance.BorderSize = 0;
-            this.btClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btClear.Location = new System.Drawing.Point(878, 173);
-            this.btClear.Name = "btClear";
-            this.btClear.Size = new System.Drawing.Size(67, 39);
-            this.btClear.TabIndex = 52;
-            this.btClear.Text = "Clear";
-            this.btClear.UseVisualStyleBackColor = false;
-            this.btClear.Click += new System.EventHandler(this.btClear_Click);
+            this.toolTip1.AutomaticDelay = 100;
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 100;
+            this.toolTip1.ReshowDelay = 20;
             // 
             // FrmTraCuuSach
             // 
@@ -418,5 +430,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btTimNC;
         private System.Windows.Forms.Button btClear;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

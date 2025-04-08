@@ -73,10 +73,12 @@ namespace QuanLyThuVien.Forms
             else
                 tt = "Đã trả (quá hạn)";
             p1.TrangThai = tt;
+            p1.NgayTraThucTe = DateTime.Now;
             foreach (ListViewItem i in lvPhieuMuon.Items)
             {
                 if (i.Text == p1.MaPhieu)
                 {
+                    i.SubItems[5].Text = DateTime.Now.ToString("dd/MM/yyyy");
                     i.SubItems[6].Text = "Đã trả (đúng hạn)";
                     break;
                 }
@@ -84,6 +86,8 @@ namespace QuanLyThuVien.Forms
             dsSach.Find(s => s.MaSach == p1.MaSach).SoLuongConLai++;
             lbThongBao.Text = "Trả thành công!";
             timer1.Enabled = true;
+            txtMaPhieu.Text = "";
+            txtMaPhieu.Focus();
         }
 
         private void FrmTraSach_Load(object sender, EventArgs e)
