@@ -100,7 +100,7 @@
             this.btAboutUs.Padding = new System.Windows.Forms.Padding(10, 0, 25, 0);
             this.btAboutUs.Size = new System.Drawing.Size(237, 60);
             this.btAboutUs.TabIndex = 8;
-            this.btAboutUs.Text = "About us";
+            this.btAboutUs.Text = "Phản hồi";
             this.btAboutUs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btAboutUs.UseVisualStyleBackColor = false;
             this.btAboutUs.Click += new System.EventHandler(this.btAboutUs_Click);
